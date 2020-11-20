@@ -1,0 +1,17 @@
+.btn {
+	font-family: 'Commissioner', sans-serif;
+	font-weight: bold;
+	font-size: rem(13px);
+	line-height: rem(30px);
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background-color: $gold;
+	padding: rem(10px) rem(55px);
+	display: inline-block;
+
+	&_transparent {
+		padding: 0;
+		background: transparent;
+	}
+}

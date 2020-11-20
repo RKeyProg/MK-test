@@ -1,0 +1,43 @@
+.escort__parameters {
+	position: relative;
+	top: rem(-90px);
+}
+
+.escort__content {
+	padding: rem(50px) rem(70px);
+	position: relative;
+}
+
+.escort__title {
+	width: rem(540px);
+	font-family: 'Commissioner', sans-serif;
+	font-weight: normal;
+	font-size: rem(28px);
+	line-height: rem(40px);
+	letter-spacing: 0.03em;
+	color: rgba(0, 0, 0, 0.9);
+	margin-bottom: rem(30px);
+}
+
+.escort__text {
+	width: rem(470px);
+	font-weight: 300;
+	font-size: rem(15px);
+	line-height: rem(25px);
+	color: rgba($color: #000, $alpha: .8);
+
+	& p {
+		margin-bottom: rem(35px);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.escort__photo {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+}

@@ -1,0 +1,18 @@
+.languages__wrapper {
+	display: flex;
+	align-items: center;
+	
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.languages__item {
+	font-weight: 400;
+}
+
+.languages__btn {
+	width: rem(9px);
+	height: rem(5.4px);
+	margin-left: rem(8px);
+}

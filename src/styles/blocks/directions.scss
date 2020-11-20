@@ -1,0 +1,43 @@
+.directions__wrap {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: rem(60px);
+}
+
+.directions__text {
+	max-width: rem(770px);
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 25px;
+	color: rgba(0, 0, 0, 0.8);
+
+	& p {
+		margin-bottom: rem(35px);
+	}
+}
+
+.directions__slider {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.direction-slider__arrow {
+	width: rem(17px);
+	height: rem(30px);
+	position: absolute;
+
+	&_right {
+		left: -42px;
+	}
+
+	&_left {
+		right: -42px;
+	}
+}
+
+.directions-slider__list {
+	height: rem(560px);
+}

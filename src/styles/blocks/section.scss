@@ -1,0 +1,16 @@
+.section {
+	position: relative;
+}
+
+.section__escort, .section__services, .section__directions {
+	background: $gray;
+	padding-bottom: rem(100px);
+}
+
+.section__directions {
+	padding-bottom: rem(450px);
+}
+
+.section__title {
+	margin-bottom: rem(35px);
+}

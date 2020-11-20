@@ -1,0 +1,35 @@
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.nav__menu {
+	font-family: 'Commissioner', sans-serif;
+	font-weight: 500;
+	font-size: rem(14px);
+	line-height: rem(20px);
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.75);
+	display: flex;
+	align-items: center;
+	margin-right: rem(51px);
+}
+
+.nav__item {
+	margin-right: rem(50px);
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.nav__btn {
+	width: rem(17px);
+	height: rem(17px);
+	
+	&-img {
+		width: 100%;
+		height: 100%;
+	}
+}
