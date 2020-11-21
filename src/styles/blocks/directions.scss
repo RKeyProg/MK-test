@@ -25,16 +25,16 @@
 }
 
 .direction-slider__arrow {
-	width: rem(17px);
-	height: rem(30px);
+	width: rem(100px);
+	height: rem(100px);
 	position: absolute;
 
 	&_right {
-		left: -42px;
+		left: -100px;
 	}
 
 	&_left {
-		right: -42px;
+		right: -100px;
 	}
 }
 

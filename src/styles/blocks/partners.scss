@@ -1,0 +1,27 @@
+.partners__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding-right: rem(200px);
+	margin-bottom: rem(40px);
+}
+
+.partners__text {
+	width: rem(670px);
+	font-weight: 300;
+	font-size: rem(15px);
+	line-height: rem(25px);
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.partners__photos {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: rem(80px);
+	filter: grayscale(1);
+
+	&-img {
+		object-fit: contain;
+	}
+}
