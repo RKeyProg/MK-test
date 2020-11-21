@@ -2,13 +2,26 @@
 	position: relative;
 }
 
-.section__escort, .section__services, .section__directions {
+.section__escort, .section__services, .section__directions, .sectiona__advantages, .section__services-list {
 	background: $gray;
 	padding-bottom: rem(100px);
 }
 
 .section__directions {
 	padding-bottom: rem(450px);
+}
+
+.section__reviews {
+	padding-top: rem(210px);
+	margin-bottom: rem(105px);
+}
+
+.sectiona__advantages {
+	padding-top: rem(80px);
+}
+
+.section__services-list {
+	padding-top: rem(110px);
 }
 
 .section__title {
