@@ -1,0 +1,143 @@
+.footer {
+	padding-top: rem(49px);
+	background: $gray;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);;
+}
+
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: rem(60px);
+	flex-wrap: wrap;
+}
+
+.footer-main__wrap {
+	max-width: rem(255px);
+	display: flex;
+	flex-direction: column;
+
+	@include desktop {
+		max-width: rem(200px);
+		margin-right: rem(15px);
+		margin-bottom: rem(30px);
+	}
+}
+
+.footer__title {
+	margin-bottom: rem(70px);
+}
+
+.footer-main__data {
+	margin-bottom: rem(62px);
+}
+
+.footer-main__row {
+	display: flex;
+	margin-bottom: rem(10px);
+	font-weight: 300;
+	font-size: rem(13px);
+	line-height: rem(20px);
+	color: rgba(0, 0, 0, 0.5);
+
+	& span {
+		font-weight: 500;
+		margin-right: rem(15px);
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.footer-main__socials {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: rem(52px);
+}
+
+.footer-main__buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-main__btn {
+	display: flex;
+	margin-bottom: rem(30px);
+	align-items: center;
+	font-weight: 600;
+	font-size: rem(12px);
+	line-height: rem(20px);
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.75);
+
+	& > span {
+		display: block;
+		max-width: rem(162px);
+		margin-right: rem(15px);
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.footer-main__arrow {
+	width: rem(60px);
+	height: rem(11.5px);
+}
+
+.footer-office__wrap {
+	max-width: rem(640px);
+
+	@include desktop {
+		margin-bottom: rem(30px);
+	}
+}
+
+.footer-office__main-city {
+	max-width: rem(200px);
+	margin-right: rem(35px);
+
+	@include desktop {
+		max-width: rem(150px);
+		margin-right: rem(20px);
+	}
+}
+
+.footer__column-title {
+	font-weight: normal;
+	font-size: rem(15px);
+	line-height: rem(25px);
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding-bottom: 5px;
+	margin-bottom: rem(29px);
+}
+
+.footer-offic__cities {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-office__all-city {
+	display: grid;
+	grid-template: 1fr 1fr 1fr / 1fr 1fr;
+	grid-gap: rem(35px);
+
+	@include desktop {
+		grid-gap: rem(20px);
+	}
+}
+
+.footer__bottom-line {
+	padding: rem(17px);
+	background: #DADADA;
+	text-align: center;
+	font-weight: 300;
+	font-size: rem(12px);
+	line-height: rem(20px);
+	letter-spacing: 0.02em;
+	color: rgba(0, 0, 0, 0.8);
+}

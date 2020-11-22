@@ -1,0 +1,32 @@
+.city__title {
+	font-weight: normal;
+	font-size: rem(14px);
+	line-height: rem(25px);
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.75);
+	margin-bottom: rem(10px);
+}
+
+.city__parameter {
+	margin-bottom: rem(20px);
+}
+
+.city__parameter-title {
+	font-family: 'Commissioner', sans-serif;
+	font-weight: 500;
+	font-size: rem(13px);
+	line-height: rem(20px);
+	letter-spacing: 0.01em;
+	color: rgba(0, 0, 0, 0.75);
+	margin-bottom: 5px;
+}
+
+.city__parameter-text {
+	max-width: rem(170px);
+	font-style: normal;
+	font-weight: 300;
+	font-size: rem(13px);
+	line-height: rem(20px);
+	color: rgba(0, 0, 0, 0.8);
+}

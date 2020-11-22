@@ -1,0 +1,26 @@
+.main-city__title {
+	margin-bottom: rem(20px);
+	font-family: 'Commissioner', sans-serif;
+}
+
+.main-city__phones {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: rem(20px);
+
+	& p {
+		font-style: normal;
+		font-weight: 300;
+		font-size: rem(13px);
+		line-height: rem(20px);
+		color: rgba(0, 0, 0, 0.8);
+	}
+}
+
+.main-city__mail {
+	font-family: 'Commissioner', sans-serif;
+	font-weight: normal;
+	font-size: rem(13px);
+	line-height: rem(20px);
+	color: rgba(0, 0, 0, 0.8);
+}

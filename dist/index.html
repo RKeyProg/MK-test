@@ -304,22 +304,24 @@
 							<p>Быстрота анализа и профессиональных действий наших юристов обеспечивают успешное решение, казалось бы, неразрешимых вопросов. Богатые знания и солидный опыт позволяют нам оказывать комплексную правовую помощь в ситуациях любой сложности.</p>
 						</div>
 					</div>
-					<div class="directions__slider">
-						<button class="direction-slider__arrow direction-slider__arrow_right slider__control">
-							<svg class="slider__control-left-img slider__control-img">
-								<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
-							</svg>
-						</button>
-						<ul class="directions-slider__list">
-							<li class="directions-slider__item">
-								<img src="./images/secondSlide1.jpg" alt="Slide1" class="directions-slider__photo-img">
-							</li>
-						</ul>
-						<button class="direction-slider__arrow direction-slider__arrow_left slider__control">
-							<svg class="slider__control-right-img slider__control-img">
-								<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
-							</svg>
-						</button>
+					<div class="directions__slider-wrap">
+						<div class="directions__slider">
+							<button class="direction-slider__arrow direction-slider__arrow_right slider__control">
+								<svg class="slider__control-left-img slider__control-img">
+									<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
+								</svg>
+							</button>
+							<ul class="directions-slider__list">
+								<li class="directions-slider__item">
+									<img src="./images/secondSlide1.jpg" alt="Slide1" class="directions-slider__photo-img">
+								</li>
+							</ul>
+							<button class="direction-slider__arrow direction-slider__arrow_left slider__control">
+								<svg class="slider__control-right-img slider__control-img">
+									<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
+								</svg>
+							</button>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -414,33 +416,18 @@
 				<div class="container">
 					<div class="advantages__cards">
 						<div class="advantages__card white-bg">
-							<div class="advantages__card-coner">
-								<svg class="advantages__card-coner-img">
-									<use xlink:href="./images/icons/sprite.svg#coner" />
-								</svg>
-							</div>
 							<h4 class="h4 advantages__title">Просто объясним сложные вещи</h4>
 							<div class="advantages__text">
 								В своей практике, мы дотошно соблюдаем законность, учитываем сложившуюся правовую практику и правила юридической этики. Мы считаем, что в поддержке бизнеса важно учитывать конкретные проблемы клиента и строить сотрудничество по принципу тщательного изучения всех нюансов возникшей ситуации. Всегда честны и объективны.
 							</div>
 						</div>
-						<div class="advantages__card white-bg advantages__card_coner">
-							<div class="advantages__card-coner">
-								<svg class="advantages__card-coner-img">
-									<use xlink:href="./images/icons/sprite.svg#coner" />
-								</svg>
-							</div>
+						<div class="advantages__card white-bg coner">
 							<h4 class="h4 advantages__title">Надежно защитим права и интересы</h4>
 							<div class="advantages__text">
 								Заказав комплексные юридические услуги в ООО «МК-Правовые технологии», можно больше не платить зарплату штатному юристу, страховые отчисления и налоги с его доходов. Можно не оплачивать отпуск, больничные и не беспокоиться о нахождении работника на рабочем месте в нужный момент.
 							</div>
 						</div>
 						<div class="advantages__card advantages__card_row white-bg">
-							<div class="advantages__card-coner">
-								<svg class="advantages__card-coner-img">
-									<use xlink:href="./images/icons/sprite.svg#coner" />
-								</svg>
-							</div>
 							<h4 class="h4 advantages__title">Вы платите только 
 								за результат!</h4>
 							<div class="advantages__text">
@@ -455,7 +442,7 @@
 				<img src="./images/pen.jpg" class="border-photo__pen">
 			</div>
 
-			<!-- services -->
+			<!-- services-list -->
 			
 			<section class="section section__services-list">
 				<div class="container">
@@ -548,10 +535,343 @@
 						<div class="services-list__text">
 							Оказание юридических услуг юридическим лицам и индивидуальным предпринимателям – наша работа. Среди собственников бизнеса принято считать, что прочитать закон в Интернете и применить его на практике - это одно и тоже. Основываясь на этом убеждении, они часто отказываются от профессиональной помощи. Практика же показывает, что только опытный юрист может правильно разобраться в правовых тонкостях, своевременно предотвратить ложные шаги и ускорить получение результата.
 						</div>
-						<div class="btn">все услуги</div>
+						<a href="#" class="btn">все услуги</a>
 					</div>
 				</div>
 			</section>
+
+			<!-- guarantees -->
+
+			<section class="section section__guarantees">
+				<div class="container">
+					<ul class="guarantees__list">
+						<li class="guarantees__item">
+							<div class="guarantees__info">
+								<h2 class="h2 guarantees__title">Почему нам доверяют</h2>
+								<div class="guarantees__text">
+									Прозрачность и открытость для клиентов – наш принцип, который с самого начала исключает любые недопонимания. Мы тщательно продумали работу каждого юриста внутри коллектива, что обеспечивает высокое качество юридических услуг компании.
+								</div>
+							</div>
+							<ul class="guarantees__points points__list">
+								<li class="guarantees__point points__item">
+									<div class="point__circle guarantees__circle"></div>
+									<div class="point__text guarantees__text">безупречная репутация</div>
+								</li>
+								<li class="guarantees__point points__item">
+									<div class="point__circle guarantees__circle"></div>
+									<div class="point__text guarantees__text">абсолютная конфиденциальность</div>
+								</li>
+								<li class="guarantees__point points__item">
+									<div class="point__circle guarantees__circle"></div>
+									<div class="point__text guarantees__text">внимание к каждому клиенту</div>
+								</li>
+								<li class="guarantees__point points__item">
+									<div class="point__circle guarantees__circle"></div>
+									<div class="point__text guarantees__text">успешный опыт решения нестандартных вопросов</div>
+								</li>
+							</ul>
+						</li>
+						<li class="guarantees__item">
+							<div class="guarantees__info">
+								<h2 class="h2 guarantees__title">Что получает клиент</h2>
+								<div class="guarantees__text">
+									Юристы нашей компании готовы дать четкие, основанные на фактах, консультации, касающиеся и «типовой», и нестандартной ситуации, опираясь на сложившуюся служебную практику и многолетний опыт. Мы объективно оцениваем риски и тщательно анализируем каждый случай.
+								</div>
+							</div>
+							<ul class="guarantees__points points__list">
+								<li class="guarantees__point points__item">
+									<div class="point__circle guarantees__circle"></div>
+									<div class="point__text guarantees__text">надежная защита бизнеса
+									</div>
+								</li>
+								<li class="guarantees__point points__item">
+									<div class="point__circle guarantees__circle"></div>
+									<div class="point__text guarantees__text">актуальная правовая помощь</div>
+								</li>
+								<li class="guarantees__point points__item">
+									<div class="point__circle guarantees__circle"></div>
+									<div class="point__text guarantees__text">своевременная оценка рисков</div>
+								</li>
+								<li class="guarantees__point points__item">
+									<div class="point__circle guarantees__circle"></div>
+									<div class="point__text guarantees__text">компетентное решение правовых вопросов</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- our-advantages -->
+
+			<section class="section section__our-advantages">
+				<div class="container">
+					<h2 class="h2 section__title">Наши преимущества</h2>
+					<ul class="parameters__list our-advantages__list">
+						<li class="parameters__item white-bg">
+							<div class="parameters__item-icon">
+								<svg class="parameters__item-img">
+									<use xlink:href="./images/icons/sprite.svg#privacy" />
+								</svg>
+							</div>
+							<div class="parameters__text">
+								Лицензия на оказание юридических услуг
+							</div>
+						</li>
+						<li class="parameters__item white-bg">
+							<div class="parameters__item-icon">
+								<svg class="parameters__item-img">
+									<use xlink:href="./images/icons/sprite.svg#staff" />
+								</svg>
+							</div>
+							<div class="parameters__text">
+								Опытные сотрудники
+							</div>
+						</li>
+						<li class="parameters__item white-bg">
+							<div class="parameters__item-icon">
+								<svg class="parameters__item-img">
+									<use xlink:href="./images/icons/sprite.svg#communication" />
+								</svg>
+							</div>
+							<div class="parameters__text">
+								Коммуникативные навыки – без труда открываем любые двери и быстро решаем нужные вопросы
+							</div>
+						</li>
+						<li class="parameters__item white-bg">
+							<div class="parameters__item-icon">
+								<svg class="parameters__item-img">
+									<use xlink:href="./images/icons/sprite.svg#documentation" />
+								</svg>
+							</div>
+							<div class="parameters__text">
+								Скрупулезный поход к ведению документации
+							</div>
+						</li>
+					</ul>
+					<div class="our-advantages__info white-bg coner">
+						<div class="our-advantages__text">Юристы нашей компании готовы дать четкие, основанные на фактах, консультации, касающиеся и «типовой», и нестандартной ситуации, опираясь на сложившуюся служебную практику и многолетний опыт. Мы объективно оцениваем риски и тщательно анализируем каждый случай.</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- cooperation -->
+			
+			<section class="section section__cooperation">
+				<div class="container">
+					<div class="cooperation__wrapper">
+						<div class="cooperation__content">
+							<h2 class="h2 section__title">Организация сотрудничества</h2>
+							<ul class="points__list cooperation__list">
+								<li class="points__item">
+									<div class="point__circle cooperation__circle">1</div>
+									<div class="point__text cooperation__text">Установив контакт с нашим сотрудником, Вы оговорите нюансы предмета обсуждения и согласуете личную встречу.</div>
+								</li>
+								<li class="points__item">
+									<div class="point__circle cooperation__circle">2</div>
+									<div class="point__text cooperation__text">Юрист изучит документы, необходимые для разработки стратегии решения возникшей ситуации. И заключит договор.</div>
+								</li>
+							</ul>
+							<div class="cooperation__info">
+								Также в нашей компании возможна удаленная форма обслуживания с оказанием полного комплекса юридических услуг в РБ через современные средства связи и мессенджеры.
+							</div>
+						</div>
+						<div class="cooperation__form white-bg">
+							<form action="" class="cooperation-form">
+								<label class="cooperation-form__label">
+									<div class="cooperation-form__title">Ваше имя</div>
+									<input type="text" class="cooperation-form__input" placeholder="Ваше имя">
+								</label>
+								<label class="cooperation-form__label">
+									<div class="cooperation-form__title">Телефон для связи</div>
+									<input type="text" class="cooperation-form__input" placeholder="+375 (XX) XXX-XX-XX">
+								</label>
+								<div class="cooperation-form__privacy">
+									Нажимая на кнопку «Получить консультацию», вы соглашаетесь с условиями <a href="#" class="cooperation-form__politics">Политики конфиденциальности</a>
+								</div>
+								<a href="#" class="btn cooperation-form__btn">Получить консультацию</a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- cost -->
+
+			<section class="section section__cost">
+				<div class="container">
+					<h2 class="h2 section__title cost__title">Стоимость юридических услуг в Минске
+					</h2>
+					<div class="cost__text">
+						Стоимость услуг формируется согласно тарифам, установленным в компании и в зависимости от времени, затраченного юристом на разрешение возникшей ситуации. Принцип прозрачности делает наши цены обоснованными и понятными для клиента.
+					</div>
+					<a href="#" class="btn">тарифы</a>
+				</div>
+			</section>
+
+			<!-- footer -->
+
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__wrapper">
+						<div class="footer-main__wrap">
+							<h5 class="h5 footer__title">ООО “МК-ПРАВОВЫЕ 
+								ТЕХНОЛОГИИ”</h5>
+							<div class="footer-main__data">
+								<div class="footer-main__row">
+									<span>УНП</span>
+									192710862
+								</div>
+								<div class="footer-main__row">
+									<span>Наш рейтинг</span>
+									5 из 5 (15 отзывов)
+								</div>
+							</div>
+							<div class="footer-main__socials">
+								<a href="#" class="socials__icon">
+									<svg class="socials__icon-img">
+										<use xlink:href="./images/icons/sprite.svg#vk" />
+									</svg>
+								</a>
+								<a href="#" class="socials__icon">
+									<svg class="socials__icon-img">
+										<use xlink:href="./images/icons/sprite.svg#odnoklassniki" />
+									</svg>
+								</a>
+								<a href="#" class="socials__icon">
+									<svg class="socials__icon-img">
+										<use xlink:href="./images/icons/sprite.svg#linkedin" />
+									</svg>
+								</a>
+								<a href="#" class="socials__icon">
+									<svg class="socials__icon-img">
+										<use xlink:href="./images/icons/sprite.svg#instagram" />
+									</svg>
+								</a>
+								<a href="#" class="socials__icon">
+									<svg class="socials__icon-img">
+										<use xlink:href="./images/icons/sprite.svg#youtube" />
+									</svg>
+								</a>
+								<a href="#" class="socials__icon">
+									<svg class="socials__icon-img">
+										<use xlink:href="./images/icons/sprite.svg#facebook" />
+									</svg>
+								</a>
+							</div>
+							<div class="footer-main__buttons">
+								<a href="#" class="footer-main__btn">
+									<span>Карта сайта</span>
+									<svg class="footer-main__arrow">
+										<use xlink:href="./images/icons/sprite.svg#arrow" />
+									</svg>
+								</a>
+								<a href="#" class="footer-main__btn">
+									<span>Политика конфиденциальности</span>
+									<svg class="footer-main__arrow">
+										<use xlink:href="./images/icons/sprite.svg#arrow" />
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="footer-office__wrap">
+							<div class="footer__column-title">Наши офисы</div>
+							<div class="footer-offic__cities">
+								<div class="footer-office__main-city">
+									<div class="city__title main-city__title">Контакты в Минске</div>
+									<div class="main-city__phones">
+										<p>+375 (44) 755-01-01</p>
+										<p>+375 (29) 550-01-01</p>
+										<p>+375 (17) 374-40-60</p>
+									</div>
+									<div class="main-city__address city__parameter">
+										<div class="city__parameter-title">Адрес</div>
+										<div class="city__parameter-text">г. Минск, ул. Широкая, д. 3, пом. 146, оф. 4</div>
+									</div>
+									<div class="main-city__phone city__parameter">
+										<div class="city__parameter-title">Телефон для связи резидентов Российской Федерации</div>
+										<div class="city__parameter-text">whatsapp +7 (989) 166 24 00</div>
+									</div>
+									<div class="main-city__mail">info@jurisprudent.by
+									</div>
+								</div>
+								<ul class="footer-office__all-city">
+									<li class="footer-office__city">
+										<div class="city__title ">Отдел в Могилеве</div>
+										<div class="city__parameter">
+											<div class="city__parameter-title">Адрес</div>
+											<div class="city__parameter-text">г. Могилев, ул. Космонавтов, д. 19, оф. 507</div>
+										</div>
+										<div class="city__mail">mogilev@jurisprudent.by</div>
+									</li>
+									<li class="footer-office__city">
+										<div class="city__title ">Отдел в Гродно</div>
+										<div class="city__parameter">
+											<div class="city__parameter-title">Адрес</div>
+											<div class="city__parameter-text">г. Гродно, ул. Карла Маркса, д. 31-1, оф. 1010</div>
+										</div>
+										<div class="city__mail">grodno@jurisprudent.by</div>
+									</li>
+									<li class="footer-office__city">
+										<div class="city__title ">Отдел в Бресте</div>
+										<div class="city__parameter">
+											<div class="city__parameter-title">Адрес</div>
+											<div class="city__parameter-text">г. Брест, б-р Шевченко, д. 4, оф. 401</div>
+										</div>
+										<div class="city__mail">brest@jurisprudent.by</div>
+									</li>
+									<li class="footer-office__city">
+										<div class="city__title ">Отдел в Гомеле</div>
+										<div class="city__parameter">
+											<div class="city__parameter-title">Адрес</div>
+											<div class="city__parameter-text">г. Гомель, пр. Ленина, д. 10, оф. 901</div>
+										</div>
+										<div class="city__mail">gomel@jurisprudent.by</div>
+									</li>
+									<li class="footer-office__city">
+										<div class="city__title ">Отдел в Витебске</div>
+										<div class="city__parameter">
+											<div class="city__parameter-title">Адрес</div>
+											<div class="city__parameter-text">г. Витебск, ул.Гоголя, д. 14, оф. 614</div>
+										</div>
+										<div class="city__mail">vitebsk@jurisprudent.by</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer-time__wrap">
+							<div class="footer__column-title">Время работы</div>
+							<div class="city__parameter">
+								<div class="city__parameter-title">Прием посетителей</div>
+								<div class="city__parameter-text">
+									<p>Ежедневно с 8.00 до 19.00</p>
+									<p>Выходной: суббота - воскресенье.</p>
+								</div>
+							</div>
+							<div class="city__parameter">
+								<div class="city__parameter-title">Прием звонков</div>
+								<div class="city__parameter-text">
+									<p>Ежедневно с 8.00 до 22.00</p>
+									<p>Без выходных</p>
+								</div>
+							</div>
+							<div class="city__parameter">
+								<div class="city__parameter-title">Онлайн консультант</div>
+								<div class="city__parameter-text">
+									<p>Круглосуточно 24/7</p>
+									<p>Без выходных</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<!-- footer bottom line -->
+
+			<div class="footer__bottom-line">
+				Разработка и продвижение сайта - Digital агентство «Веб Фокус»
+			</div>
 		</div>
 	</div>
 

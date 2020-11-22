@@ -3,15 +3,31 @@
 	grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
 	grid-gap: rem(30px);
 	margin-bottom: rem(40px);
+
+	@include desktop {
+		grid-gap: rem(15px);
+	}
+
+	@include tablets {
+		grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+	}
 }
 
 .services__item {
 	padding: rem(15px) rem(15px) rem(15px) rem(40px);
+
+	@include desktop {
+		padding-left: rem(30px);
+	}
 }
 
 .services__content {
 	display: flex;
 	justify-content: space-between;
+
+	@include desktop {
+		align-items: center;
+	}
 }
 
 .services__title {
@@ -20,6 +36,7 @@
 }
 
 .services__icon {
+	flex-shrink: 0;
 	width: rem(80px);
 	height: rem(80px);
 	display: flex;
@@ -27,12 +44,22 @@
 	align-items: center;
 	border-radius: 50%;
 	border: 1px solid rgba(0, 0, 0, 0.1);
+
+	@include desktop {
+		width: 6vw;
+		height: 6vw;
+	}
 }
 
 .services__icon-img {
 	fill: $gold;
 	width: rem(40px);
 	height: rem(40px);
+
+	@include desktop {
+		width: 3vw;
+		height: 3vw;
+	}
 }
 
 .services__btn {

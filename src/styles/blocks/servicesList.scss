@@ -26,6 +26,10 @@
 	font-size: rem(15px);
 	line-height: rem(25px);
 	color: rgba(0, 0, 0, 0.8);
+
+	@include desktop {
+		max-width: rem(490px);
+	}
 }
 
 .service {

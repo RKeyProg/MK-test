@@ -2,16 +2,19 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 }
 
 .parameters__item {
 	width: rem(270px);
-	min-height: rem(285px);
-	padding: rem(50px) rem(20px) rem(20px);
+	padding: rem(50px) rem(20px) rem(40px);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+	@include desktop {
+		width: 23vw;
+		padding: rem(50px) rem(15px) rem(40px);
+	}
 }
 
 .parameters__item-icon {
@@ -23,6 +26,11 @@
 	border-radius: 50%;
 	border: 3px solid rgba(0, 0, 0, 0.1);
 	margin-bottom: rem(25px);
+
+	@include desktop {
+		width: 12vw;
+		height: 12vw;
+	}
 }
 
 .parameters__item-img {
@@ -31,10 +39,15 @@
 }
 
 .parameters__text {
+	width: 100%;
 	font-weight: normal;
 	font-size: rem(16px);
 	line-height: rem(25px);
 	text-align: center;
 	letter-spacing: 0.02em;
 	color: rgba(0, 0, 0, 0.75);
+
+	@include desktop {
+		font-size: rem(14px);
+	}
 }
