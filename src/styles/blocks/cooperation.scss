@@ -41,11 +41,23 @@
 .cooperation__form {
 	width: rem(570px);
 	padding: rem(40px) rem(50px) rem(50px);
+
+	@include desktop {
+		padding: rem(40px) rem(40px) rem(50px);
+		margin-left: 10px;
+	}
 }
 
 .cooperation-form {
 	display: flex;
 	flex-direction: column;
+
+	@include desktop {
+		height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	}
 }
 
 .cooperation-form__label {

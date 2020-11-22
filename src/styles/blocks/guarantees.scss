@@ -19,6 +19,16 @@
 
 .guarantees__info {
 	max-width: rem(465px);
+
+	@include desktop {
+		max-width: calc(50% - 30px);
+	}
+}
+
+.guarantees__points {
+	@include desktop {
+		max-width: 50%;
+	}
 }
 
 .guarantees__title {

@@ -1,9 +1,13 @@
 .partners__info {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 	padding-right: rem(200px);
 	margin-bottom: rem(40px);
+	
+	@include desktop {
+		padding-right: 0;
+	}
 }
 
 .partners__text {
@@ -12,16 +16,27 @@
 	font-size: rem(15px);
 	line-height: rem(25px);
 	color: rgba(0, 0, 0, 0.8);
+
+	@include desktop {
+		width: 50vw;
+	}
 }
 
 .partners__photos {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 	height: rem(80px);
 	filter: grayscale(1);
 
 	&-img {
 		object-fit: contain;
+		width: auto;
+		margin-bottom: rem(20px);
+	}
+
+	@include desktop {
+		height: auto;
 	}
 }

@@ -15,6 +15,16 @@
 	& p {
 		margin-bottom: rem(35px);
 	}
+
+	@include desktop {
+		max-width: rem(500px);
+	}
+}
+
+.directions__slider-wrap {
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 .directions__slider {
@@ -22,6 +32,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@include desktop {
+		justify-content: center;
+	}
 }
 
 .direction-slider__arrow {
@@ -39,5 +53,10 @@
 }
 
 .directions-slider__list {
-	height: rem(560px);
+	width: 100%;
+	max-height: rem(560px);
+
+	@include desktop-for-slider {
+		width: calc(100vw - 200px);
+	}
 }

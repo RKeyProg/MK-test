@@ -30,6 +30,10 @@
 
 	& > .advantages__text {
 		max-width: rem(720px);
+
+		@include desktop {
+			max-width: rem(470px);
+		}
 	}
 }
 

@@ -9,11 +9,23 @@
 
 .section__directions {
 	padding-bottom: rem(450px);
+
+	@include desktop {
+		padding-bottom: rem(300px);
+	}
 }
 
 .section__reviews {
 	padding-top: rem(210px);
 	margin-bottom: rem(105px);
+
+	@include desktop {
+		padding-top: rem(100px);
+	}
+}
+
+.section__partners {
+	padding-bottom: rem(90px);
 }
 
 .sectiona__advantages {

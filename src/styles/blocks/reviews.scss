@@ -7,6 +7,10 @@
 .reviews-slider__item {
 	max-width: rem(570px);
 	box-shadow: 0px 4px rem(20px) rgba(0, 0, 0, 0.08);
+
+	@include desktop {
+		max-width: rem(350px);
+	}
 }
 
 .reviews-slider__item-photo {
