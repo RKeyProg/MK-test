@@ -2,7 +2,7 @@
 	position: relative;
 }
 
-.section__escort, .section__services, .section__directions, .sectiona__advantages, .section__services-list {
+.section__escort, .section__services, .section__directions, .sectiona__advantages, .section__services-list, .section__our-advantages, .section__cooperation, .section__cost {
 	background: $gray;
 	padding-bottom: rem(100px);
 }
@@ -22,6 +22,15 @@
 
 .section__services-list {
 	padding-top: rem(110px);
+}
+
+.section__guarantees {
+	background: #fff;
+	padding: rem(80px) 0 rem(100px);
+}
+
+.section__our-advantages {
+	padding-top: rem(80px);
 }
 
 .section__title {

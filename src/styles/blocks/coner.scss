@@ -1,0 +1,12 @@
+.coner {
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: rem(70px);
+		height: rem(70px);
+		display: block;
+		background: url("./images/icons/coner.svg") center center / cover no-repeat;
+	}
+}

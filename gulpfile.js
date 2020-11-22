@@ -58,8 +58,17 @@ task('copy:img', () => {
 	}));
 });
 
+task('copy:svg', () => {
+	return src([`${SRC_PATH}/images/icons/coner.svg`])
+	.pipe(dest(`${DIST_PATH}/images/icons`)).pipe(reload({
+			stream: true
+	}));
+});
+
 task('copy:video', () => {
-	return src([`${SRC_PATH}/video/*`]).pipe(dest(`${DIST_PATH}/video`)).pipe(reload({
+	return src([`${SRC_PATH}/video/*`])
+	.pipe(dest(`${DIST_PATH}/video`))
+	.pipe(reload({
 		stream: true
 	}));
 });
@@ -143,7 +152,7 @@ task('watch', () => {
 })
 
 task('default', series('clean', 'sass',
-	parallel('copy:html', 'copy:img', 'copy:video', 'styles', 'scripts', 'icons'), parallel('watch', 'server')));
+	parallel('copy:html', 'copy:img', 'copy:svg', 'copy:video', 'styles', 'scripts', 'icons'), parallel('watch', 'server')));
 
 task('build', series('clean', 'sass',
-	parallel('copy:html', 'copy:img', 'copy:video', 'styles', 'scripts', 'icons')));
+	parallel('copy:html', 'copy:img', 'copy:svg', 'copy:video', 'styles', 'scripts', 'icons')));

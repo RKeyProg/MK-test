@@ -1,0 +1,100 @@
+.cooperation__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cooperation__content {
+	width: rem(500px);
+}
+
+.cooperation__list {
+	margin-bottom: rem(35px);
+}
+
+.cooperation__circle {
+	width: rem(70px);
+	height: rem(70px);
+	font-family: 'Commissioner', sans-serif;
+	font-weight: 800;
+	font-size: rem(22px);
+	line-height: rem(67px);
+	text-align: center;
+	color: $gold;
+	border: 1px solid rgba(222, 195, 119, 0.75);
+}
+
+.cooperation__text {
+	font-weight: normal;
+	font-size: rem(15px);
+	line-height: rem(25px);
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.cooperation__info {
+	font-weight: 300;
+	font-size: rem(14px);
+	line-height: rem(25px);
+	letter-spacing: 0.01em;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.cooperation__form {
+	width: rem(570px);
+	padding: rem(40px) rem(50px) rem(50px);
+}
+
+.cooperation-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.cooperation-form__label {
+	width: 100%;
+	display: block;
+	margin-bottom: rem(20px);
+}
+
+.cooperation-form__title {
+	margin-bottom: rem(10px);
+	font-weight: 500;
+	font-size: rem(13px);
+	line-height: rem(20px);
+	letter-spacing: 0.01em;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.cooperation-form__input {
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 4px rem(10px);
+	font-weight: 300;
+	font-size: rem(15px);
+	line-height: rem(25px);
+	color: rgba(0, 0, 0, .5);
+
+	&::placeholder {
+		color: rgba(0, 0, 0, .5);
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.cooperation-form__privacy {
+	font-weight: 300;
+	font-size: rem(13px);
+	line-height: rem(20px);
+	color: rgba(0, 0, 0, 0.5);
+	margin-bottom: rem(30px);
+}
+
+.cooperation-form__politics {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.cooperation-form__btn {
+	text-align: center;
+}

@@ -1,0 +1,23 @@
+.points__list {
+	display: flex;
+	flex-direction: column;
+}
+
+.points__item {
+	display: flex;
+	align-items: center;
+	margin-bottom: rem(25px);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.point__circle {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	margin-right: rem(30px);
+}
