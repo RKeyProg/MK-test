@@ -7,6 +7,16 @@
 	}
 }
 
+.languages__list {
+	border: 0;
+	outline: none;
+	appearance: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
 .languages__item {
 	font-weight: 400;
 }
