@@ -2,6 +2,10 @@
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: rem(30px);
+	
+	@include phones {
+		overflow: hidden;
+	}
 }
 
 .reviews-slider__item {
@@ -9,7 +13,13 @@
 	box-shadow: 0px 4px rem(20px) rgba(0, 0, 0, 0.08);
 
 	@include desktop {
-		max-width: rem(350px);
+		max-width: 48%;
+	}
+
+	@include phones {
+		max-width: 100%;
+		width: 100%;
+		flex-shrink: 0;
 	}
 }
 
@@ -19,6 +29,10 @@
 
 .reviews-slider__content {
 	padding: rem(40px) rem(50px) rem(65px);
+
+	@include tablets {
+		padding: rem(30px) rem(30px) rem(55px);
+	}
 }
 
 .reviews-slider__post {
@@ -66,6 +80,14 @@
 	align-items: center;
 	position: relative;
 	right: 3.5%;
+
+	@include tablets {
+		right: 5.2%;
+	}
+
+	@include phones {
+		display: none;
+	}
 }
 
 .reviews-slider__circle {

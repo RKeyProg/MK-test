@@ -19,6 +19,10 @@
 .hero-slider__title {
 	width: rem(500px);
 	margin-bottom: rem(20px);
+
+	@include phones {
+		width: 100%;
+	}
 }
 
 .hero-slider__subtitle {
@@ -32,6 +36,10 @@
 
 .hero-slider__btn {
 	margin-bottom: rem(111px);
+
+	@include phones {
+		margin-bottom: rem(50px);
+	}
 }
 
 .hero-slider__controls {

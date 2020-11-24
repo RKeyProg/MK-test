@@ -12,12 +12,20 @@
 	&:last-child {
 		margin-bottom: 0;
 	}
+
+	@include tablets {
+		flex-wrap: wrap;
+	}
 }
 
 .services-list__info {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+
+	@include phones {
+		flex-direction: column;
+	}
 }
 
 .services-list__text {
@@ -30,11 +38,28 @@
 	@include desktop {
 		max-width: rem(490px);
 	}
+
+	@include tablets {
+		max-width: 59%;
+	}
+
+	@include phones {
+		max-width: 100%;
+		margin-bottom: rem(20px);
+	}
 }
 
 .service {
 	display: flex;
-	height: rem(140px);
+	min-height: rem(140px);
+
+	@include tablets {
+		margin-bottom: rem(30px);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 
 	&__content {
 		width: 100%;
@@ -42,6 +67,10 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+
+		@include tablets {
+			padding: rem(15px) rem(20px);
+		}
 	}
 
 	&__btn {
@@ -54,14 +83,26 @@
 
 	&_width_470 {
 		width: rem(470px);
+
+		@include tablets {
+			width: rem(270px);
+		}
 	}
 
 	&_width_570 {
 		width: rem(570px);
+
+		@include tablets {
+			width: rem(370px);
+		}
 	}
 	
 	&_width_670 {
 		width: rem(670px);
+
+		@include tablets {
+			width: rem(470px);
+		}
 	}
 }
 

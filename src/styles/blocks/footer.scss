@@ -119,6 +119,10 @@
 .footer-offic__cities {
 	display: flex;
 	justify-content: space-between;
+
+	@include phones {
+		flex-direction: column;
+	}
 }
 
 .footer-office__all-city {
@@ -128,6 +132,10 @@
 
 	@include desktop {
 		grid-gap: rem(20px);
+	}
+
+	@include phones {
+		grid-gap: rem(10px);
 	}
 }
 
