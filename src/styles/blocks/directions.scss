@@ -2,6 +2,10 @@
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: rem(60px);
+
+	@include phones {
+		flex-direction: column;
+	}
 }
 
 .directions__text {
@@ -19,12 +23,21 @@
 	@include desktop {
 		max-width: rem(500px);
 	}
+
+	@include tablets {
+		max-width: rem(430px);
+	}
+
+	@include phones {
+		max-width: 100%;
+	}
 }
 
 .directions__slider-wrap {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	overflow: hidden;
 }
 
 .directions__slider {
@@ -43,12 +56,29 @@
 	height: rem(100px);
 	position: absolute;
 
+	@include tablets {
+		width: rem(70px);
+		height: rem(70px);
+	}
+
+	@include phones {
+		display: none;
+	}
+
 	&_right {
 		left: -100px;
+
+		@include tablets {
+			left: -65px;
+		}
 	}
 
 	&_left {
 		right: -100px;
+
+		@include tablets {
+			right: -65px;
+		}
 	}
 }
 
@@ -58,5 +88,13 @@
 
 	@include desktop-for-slider {
 		width: calc(100vw - 200px);
+	}
+
+	@include tablets {
+		width: calc(100vw - 150px);
+	}
+
+	@include phones {
+		width: 100%;
 	}
 }

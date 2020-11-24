@@ -5,6 +5,10 @@
 .section__escort, .section__services, .section__directions, .sectiona__advantages, .section__services-list, .section__our-advantages, .section__cooperation, .section__cost {
 	background: $gray;
 	padding-bottom: rem(100px);
+
+	@include tablets {
+		padding-bottom: rem(80px);
+	}
 }
 
 .section__directions {

@@ -8,6 +8,10 @@
 	@include desktop {
 		padding-right: 0;
 	}
+
+	@include phones {
+		flex-direction: column;
+	}
 }
 
 .partners__text {
@@ -19,6 +23,11 @@
 
 	@include desktop {
 		width: 50vw;
+	}
+
+	@include phones {
+		width: 100%;
+		margin-bottom: rem(20px);
 	}
 }
 

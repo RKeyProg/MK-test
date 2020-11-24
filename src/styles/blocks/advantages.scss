@@ -3,6 +3,14 @@
 	grid-template: 1fr auto / 1fr 1fr;
 	grid-gap: rem(30px);
 	margin-bottom: rem(100px);
+
+	@include tablets {
+		grid-gap: rem(20px);
+	}
+
+	@include phones {
+		grid-template-columns: 1fr;
+	}
 }
 
 .advantages__card {
@@ -10,6 +18,10 @@
 	padding: rem(40px) rem(50px) rem(50px);
 	display: flex;
 	flex-direction: column;
+
+	@include tablets {
+		padding: rem(30px) rem(40px) rem(40px);
+	}
 }
 
 .advantages__title {
@@ -34,6 +46,12 @@
 		@include desktop {
 			max-width: rem(470px);
 		}
+	}
+
+	@include phones {
+		grid-column: 1;
+		padding: rem(30px) rem(40px);
+		flex-direction: column;
 	}
 }
 

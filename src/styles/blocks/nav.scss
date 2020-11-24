@@ -1,6 +1,10 @@
 .nav {
 	display: flex;
 	align-items: center;
+
+	@include tablets {
+		flex-direction: column;
+	}
 }
 
 .nav__menu {
@@ -20,13 +24,23 @@
 		margin-right: rem(40px);
 		margin-left: rem(70px);
 	}
+
+	@include tablets {
+		margin: 0;
+		margin-bottom: rem(20px);
+	}
 }
 
 .nav__item {
 	margin-right: rem(50px);
+	margin-bottom: rem(10px);
 
 	&:last-child {
 		margin-right: 0;
+
+		@include tablets {
+			margin-right: rem(50px);
+		}
 	}
 }
 

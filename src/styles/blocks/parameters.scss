@@ -2,6 +2,7 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .parameters__item {
@@ -14,6 +15,11 @@
 	@include desktop {
 		width: 23vw;
 		padding: rem(50px) rem(15px) rem(40px);
+	}
+
+	@include tablets {
+		min-width: rem(170px);
+		margin-bottom: rem(20px);
 	}
 }
 
