@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Lato:wght@300;400;600&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Lato:wght@300;400;600&family=Source+Sans+Pro:wght@300;400&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="main.min.css">
 	<title>Document</title>
 </head>
+
 <body>
 	<div class="wrapper">
 		<div class="maincontent">
@@ -20,9 +24,11 @@
 							<div class="header__languages">
 								<span>Язык</span>
 								<div class="languages__wrapper">
-									<ul class="languages__list">
-										<li class="languages__item">русский</li>
-									</ul>
+									<select class="languages__list" name="languages" placeholder="Выберите город">
+										<option class="languages__item" selected>Русский</option>
+										<option>English</option>
+										<option>Franch</option>
+									</select>
 									<svg class="languages__btn">
 										<use xlink:href="./images/icons/sprite.svg#langArrow" />
 									</svg>
@@ -96,28 +102,110 @@
 						</div>
 					</header>
 				</div>
-				<ul class="hero-slider__list">
-					<li class="hero-slider__item">
-						<div class="container hero-slider__container">
-							<h1 class="h1 hero-slider__title">Взыскание дебиторской задолженности</h1>
-							<div class="hero-slider__subtitle">Индивидуальный подход и нацеленность на достижение результата</div>
-							<a href="#" class="btn hero-slider__btn">Подробнее</a>
-							<div class="hero-slider__controls">
-								<button class="hero-slider__arrow slider__control">
-									<svg class="slider__control-left-img slider__control-img">
-										<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
-									</svg>
-								</button>
-								<button class="hero-slider__arrow slider__control">
-									<svg class="slider__control-right-img slider__control-img">
-										<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
-									</svg>
-								</button>
+				<div class="hero-slider__list-wrapper">
+					<ul id="hero-slider" class="hero-slider__list">
+						<li class="hero-slider__item">
+							<div class="container hero-slider__container">
+								<h1 class="h1 hero-slider__title">Взыскание дебиторской задолженности</h1>
+								<div class="hero-slider__subtitle">Индивидуальный подход и нацеленность на достижение результата</div>
+								<a href="#" class="btn hero-slider__btn">Подробнее</a>
+								<div class="hero-slider__controls">
+									<button class="hero-slider__arrow hero-slider__arrow-left slider__control">
+										<svg class="slider__control-left-img slider__control-img">
+											<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
+										</svg>
+									</button>
+									<button class="hero-slider__arrow hero-slider__arrow-right slider__control">
+										<svg class="slider__control-right-img slider__control-img">
+											<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
+										</svg>
+									</button>
+								</div>
 							</div>
-						</div>
-						<img src="./images/mainSlide1.jpg" alt="Slide1" class="hero-slider__photo-img">
-					</li>
-				</ul>
+							<img src="./images/mainSlide1.jpg" alt="Slide1" class="hero-slider__photo-img">
+						</li>
+						<li class="hero-slider__item">
+							<div class="container hero-slider__container">
+								<h1 class="h1 hero-slider__title">Взыскание дебиторской задолженности</h1>
+								<div class="hero-slider__subtitle">Индивидуальный подход и нацеленность на достижение результата</div>
+								<a href="#" class="btn hero-slider__btn">Подробнее</a>
+								<div class="hero-slider__controls">
+									<button class="hero-slider__arrow hero-slider__arrow-left slider__control">
+										<svg class="slider__control-left-img slider__control-img">
+											<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
+										</svg>
+									</button>
+									<button class="hero-slider__arrow hero-slider__arrow-right slider__control">
+										<svg class="slider__control-right-img slider__control-img">
+											<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<img src="./images/mainSlide2.jpg" alt="Slide1" class="hero-slider__photo-img">
+						</li>
+						<li class="hero-slider__item">
+							<div class="container hero-slider__container">
+								<h1 class="h1 hero-slider__title">Взыскание дебиторской задолженности</h1>
+								<div class="hero-slider__subtitle">Индивидуальный подход и нацеленность на достижение результата</div>
+								<a href="#" class="btn hero-slider__btn">Подробнее</a>
+								<div class="hero-slider__controls">
+									<button class="hero-slider__arrow hero-slider__arrow-left slider__control">
+										<svg class="slider__control-left-img slider__control-img">
+											<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
+										</svg>
+									</button>
+									<button class="hero-slider__arrow hero-slider__arrow-right slider__control">
+										<svg class="slider__control-right-img slider__control-img">
+											<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<img src="./images/mainSlide3.jpg" alt="Slide1" class="hero-slider__photo-img">
+						</li>
+						<li class="hero-slider__item">
+							<div class="container hero-slider__container">
+								<h1 class="h1 hero-slider__title">Взыскание дебиторской задолженности</h1>
+								<div class="hero-slider__subtitle">Индивидуальный подход и нацеленность на достижение результата</div>
+								<a href="#" class="btn hero-slider__btn">Подробнее</a>
+								<div class="hero-slider__controls">
+									<button class="hero-slider__arrow hero-slider__arrow-left slider__control">
+										<svg class="slider__control-left-img slider__control-img">
+											<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
+										</svg>
+									</button>
+									<button class="hero-slider__arrow hero-slider__arrow-right slider__control">
+										<svg class="slider__control-right-img slider__control-img">
+											<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<img src="./images/mainSlide4.jpg" alt="Slide1" class="hero-slider__photo-img">
+						</li>
+						<li class="hero-slider__item">
+							<div class="container hero-slider__container">
+								<h1 class="h1 hero-slider__title">Взыскание дебиторской задолженности</h1>
+								<div class="hero-slider__subtitle">Индивидуальный подход и нацеленность на достижение результата</div>
+								<a href="#" class="btn hero-slider__btn">Подробнее</a>
+								<div class="hero-slider__controls">
+									<button class="hero-slider__arrow hero-slider__arrow-left slider__control">
+										<svg class="slider__control-left-img slider__control-img">
+											<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
+										</svg>
+									</button>
+									<button class="hero-slider__arrow hero-slider__arrow-right slider__control">
+										<svg class="slider__control-right-img slider__control-img">
+											<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
+										</svg>
+									</button>
+								</div>
+							</div>
+							<img src="./images/mainSlide5.jpg" alt="Slide1" class="hero-slider__photo-img">
+						</li>
+					</ul>
+				</div>
 			</section>
 
 			<!-- escort -->
@@ -172,10 +260,16 @@
 								Юридическое сопровождение бизнеса от «МК-Правовые технологии»
 							</div>
 							<div class="escort__text">
-								<p>Главный принцип нашей работы - качество. Постоянно следовать ему помогает сплоченная команда талантливых и энергичных сотрудников, способных сообща заниматься сложными проектами, никогда не допуская сбоев в работе.</p>
-								<p>Мы обеспечиваем максимальный уровень профессионального обслуживания, который можно ожидать от крупной юридической фирмы.</p>
-								<p>Нашу фирму отличают яркая индивидуальность и следование модели эффективного юридического обслуживания. Благодаря профессиональной гибкости мы находим творческие решения как обычных вопросов, так и неординарных проблем, возникающих у наших клиентов.</p>
-								<p>Все наши рекомендации основаны на глубоких академических знаниях и опыте практического применения в хозяйственном праве.</p>
+								<p>Главный принцип нашей работы - качество. Постоянно следовать ему помогает сплоченная команда
+									талантливых и энергичных сотрудников, способных сообща заниматься сложными проектами, никогда не
+									допуская сбоев в работе.</p>
+								<p>Мы обеспечиваем максимальный уровень профессионального обслуживания, который можно ожидать от крупной
+									юридической фирмы.</p>
+								<p>Нашу фирму отличают яркая индивидуальность и следование модели эффективного юридического
+									обслуживания. Благодаря профессиональной гибкости мы находим творческие решения как обычных вопросов,
+									так и неординарных проблем, возникающих у наших клиентов.</p>
+								<p>Все наши рекомендации основаны на глубоких академических знаниях и опыте практического применения в
+									хозяйственном праве.</p>
 							</div>
 						</div>
 						<div class="escort__photo">
@@ -304,23 +398,44 @@
 					<div class="directions__wrap">
 						<h2 class="section__title">Основные направления деятельности</h2>
 						<div class="directions__text">
-							<p>Основной принцип нашей работы – максимальная открытость и доверительные отношения с каждым клиентом, с тем чтобы от начала и до конца совместной работы, не возникало никакого недопонимания. Мы ставим целью не только привлечение новых клиентов, но и поддержание длительных партнерских отношений с клиентами, которые уже воспользовались нашими услугами.</p>
-							<p>Быстрота анализа и профессиональных действий наших юристов обеспечивают успешное решение, казалось бы, неразрешимых вопросов. Богатые знания и солидный опыт позволяют нам оказывать комплексную правовую помощь в ситуациях любой сложности.</p>
+							<p>Основной принцип нашей работы – максимальная открытость и доверительные отношения с каждым клиентом, с
+								тем чтобы от начала и до конца совместной работы, не возникало никакого недопонимания. Мы ставим целью
+								не только привлечение новых клиентов, но и поддержание длительных партнерских отношений с клиентами,
+								которые уже воспользовались нашими услугами.</p>
+							<p>Быстрота анализа и профессиональных действий наших юристов обеспечивают успешное решение, казалось бы,
+								неразрешимых вопросов. Богатые знания и солидный опыт позволяют нам оказывать комплексную правовую
+								помощь в ситуациях любой сложности.</p>
 						</div>
 					</div>
 					<div class="directions__slider-wrap">
 						<div class="directions__slider">
-							<button class="direction-slider__arrow direction-slider__arrow_right slider__control">
+							<button id="direction-slider__arrow-left"
+								class="direction-slider__arrow direction-slider__arrow_right slider__control">
 								<svg class="slider__control-left-img slider__control-img">
 									<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
 								</svg>
 							</button>
-							<ul class="directions-slider__list">
-								<li class="directions-slider__item">
-									<img src="./images/secondSlide1.jpg" alt="Slide1" class="directions-slider__photo-img">
-								</li>
-							</ul>
-							<button class="direction-slider__arrow direction-slider__arrow_left slider__control">
+							<div class="directions-slider__list-wrapper">
+								<ul id="directions-slider" class="directions-slider__list">
+									<li class="directions-slider__item">
+										<img src="./images/secondSlide1.jpg" alt="Slide1" class="directions-slider__photo-img">
+									</li>
+									<li class="directions-slider__item">
+										<img src="./images/secondSlide2.jpg" alt="Slide1" class="directions-slider__photo-img">
+									</li>
+									<li class="directions-slider__item">
+										<img src="./images/secondSlide3.jpg" alt="Slide1" class="directions-slider__photo-img">
+									</li>
+									<li class="directions-slider__item">
+										<img src="./images/secondSlide4.jpg" alt="Slide1" class="directions-slider__photo-img">
+									</li>
+									<li class="directions-slider__item">
+										<img src="./images/secondSlide5.jpg" alt="Slide1" class="directions-slider__photo-img">
+									</li>
+								</ul>
+							</div>
+							<button id="direction-slider__arrow-right"
+								class="direction-slider__arrow direction-slider__arrow_left slider__control">
 								<svg class="slider__control-right-img slider__control-img">
 									<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
 								</svg>
@@ -331,59 +446,131 @@
 			</section>
 
 			<!-- reviews -->
-		
+
 			<section class="section section__reviews">
 				<div class="container">
 					<h2 class="section__title">
 						Отзывы наших партнеров
 					</h2>
 					<div class="reviews-slider">
-						<ul class="reviews-slider__list">
-							<li class="reviews-slider__item">
-								<div class="reviews-slider__item-photo">
-									<img src="./images/reviews.jpg" class="reviews-slider__item-img">
-								</div>
-								<div class="reviews-slider__content">
-									<div class="reviews-slider__post">Директор</div>
-									<h3 class="h3 reviews-slider__name">
-										С.В. Косачев
-									</h3>
-									<div class="reviews-slider__text">
-										Уважаемая Светлана Александровна! Наша компания выражает благодарность и признательность обществу с ограниченной ответственностью «МК-Правовые технологии». Благодаря слаженной работе и высокой квалификации Ваших сотрудников и специалистов компания «ВиваСтрой» получила качественные юридические услуги по взысканию денежных средств с должника. Профессионализм работников ООО «МК-Правовые технологии», а также желание работать со сложными и нестандартными задачами является залогом высокоэффективного и успешного взаимодействия наших компаний. Рекомендуем...
+						<div class="reviews-slider__list-wrapper">
+							<ul id="reviews-slider" class="reviews-slider__list">
+								<li class="reviews-slider__item">
+									<div class="reviews-slider__item-photo">
+										<img src="./images/reviews.jpg" class="reviews-slider__item-img">
 									</div>
-									<a href="#" class="reviews-slider__btn btn btn_transparent">Читать далее</a>
-								</div>
-							</li>
-							<li class="reviews-slider__item">
-								<div class="reviews-slider__item-photo">
-									<img src="./images/reviews.jpg" class="reviews-slider__item-img">
-								</div>
-								<div class="reviews-slider__content">
-									<div class="reviews-slider__post">глава представительства</div>
-									<h3 class="h3 reviews-slider__name">
-										Валерий Мяснянкин
-									</h3>
-									<div class="reviews-slider__text">
-										Представительство корпорации «VMSN GROUP, INC.» (США) в Республике Беларусь на протяжении нескольких лет сотрудничает с ООО «МК-Правовые технологии» в рамках сопровождения деятельности по юридическим вопросам, в том числе по вопросам ведения кадрового делопроизводства – абонентское обслуживание. Хотелось бы отметить работу специалистов ООО «МК-Правовые технологии» хорошими теплыми словами: надёжные, обязательные, пунктуальные. Вопросы любой сложности им по плечу. Работая с профессионалами МК-Правовые технологии, всегда можно рассчитывать...
+									<div class="reviews-slider__content">
+										<div class="reviews-slider__post">Директор</div>
+										<h3 class="h3 reviews-slider__name">
+											С.В. Косачев
+										</h3>
+										<div class="reviews-slider__text">
+											Уважаемая Светлана Александровна! Наша компания выражает благодарность и признательность обществу
+											с ограниченной ответственностью «МК-Правовые технологии». Благодаря слаженной работе и высокой
+											квалификации Ваших сотрудников и специалистов компания «ВиваСтрой» получила качественные
+											юридические услуги по взысканию денежных средств с должника. Профессионализм работников ООО
+											«МК-Правовые технологии», а также желание работать со сложными и нестандартными задачами является
+											залогом высокоэффективного и успешного взаимодействия наших компаний. Рекомендуем...
+										</div>
+										<a href="#" class="reviews-slider__btn btn btn_transparent">Читать далее</a>
 									</div>
-									<a href="#" class="reviews-slider__btn btn btn_transparent">Читать далее</a>
-								</div>
-							</li>
-						</ul>
+								</li>
+								<li class="reviews-slider__item">
+									<div class="reviews-slider__item-photo">
+										<img src="./images/reviews.jpg" class="reviews-slider__item-img">
+									</div>
+									<div class="reviews-slider__content">
+										<div class="reviews-slider__post">глава представительства</div>
+										<h3 class="h3 reviews-slider__name">
+											Валерий Мяснянкин
+										</h3>
+										<div class="reviews-slider__text">
+											Представительство корпорации «VMSN GROUP, INC.» (США) в Республике Беларусь на протяжении
+											нескольких лет сотрудничает с ООО «МК-Правовые технологии» в рамках сопровождения деятельности по
+											юридическим вопросам, в том числе по вопросам ведения кадрового делопроизводства – абонентское
+											обслуживание. Хотелось бы отметить работу специалистов ООО «МК-Правовые технологии» хорошими
+											теплыми словами: надёжные, обязательные, пунктуальные. Вопросы любой сложности им по плечу.
+											Работая с профессионалами МК-Правовые технологии, всегда можно рассчитывать...
+										</div>
+										<a href="#" class="reviews-slider__btn btn btn_transparent">Читать далее</a>
+									</div>
+								</li>
+								<li class="reviews-slider__item">
+									<div class="reviews-slider__item-photo">
+										<img src="./images/reviews.jpg" class="reviews-slider__item-img">
+									</div>
+									<div class="reviews-slider__content">
+										<div class="reviews-slider__post">глава представительства</div>
+										<h3 class="h3 reviews-slider__name">
+											Валерий Мяснянкин
+										</h3>
+										<div class="reviews-slider__text">
+											Представительство корпорации «VMSN GROUP, INC.» (США) в Республике Беларусь на протяжении
+											нескольких лет сотрудничает с ООО «МК-Правовые технологии» в рамках сопровождения деятельности по
+											юридическим вопросам, в том числе по вопросам ведения кадрового делопроизводства – абонентское
+											обслуживание. Хотелось бы отметить работу специалистов ООО «МК-Правовые технологии» хорошими
+											теплыми словами: надёжные, обязательные, пунктуальные. Вопросы любой сложности им по плечу.
+											Работая с профессионалами МК-Правовые технологии, всегда можно рассчитывать...
+										</div>
+										<a href="#" class="reviews-slider__btn btn btn_transparent">Читать далее</a>
+									</div>
+								</li>
+								<li class="reviews-slider__item">
+									<div class="reviews-slider__item-photo">
+										<img src="./images/reviews.jpg" class="reviews-slider__item-img">
+									</div>
+									<div class="reviews-slider__content">
+										<div class="reviews-slider__post">глава представительства</div>
+										<h3 class="h3 reviews-slider__name">
+											Валерий Мяснянкин
+										</h3>
+										<div class="reviews-slider__text">
+											Представительство корпорации «VMSN GROUP, INC.» (США) в Республике Беларусь на протяжении
+											нескольких лет сотрудничает с ООО «МК-Правовые технологии» в рамках сопровождения деятельности по
+											юридическим вопросам, в том числе по вопросам ведения кадрового делопроизводства – абонентское
+											обслуживание. Хотелось бы отметить работу специалистов ООО «МК-Правовые технологии» хорошими
+											теплыми словами: надёжные, обязательные, пунктуальные. Вопросы любой сложности им по плечу.
+											Работая с профессионалами МК-Правовые технологии, всегда можно рассчитывать...
+										</div>
+										<a href="#" class="reviews-slider__btn btn btn_transparent">Читать далее</a>
+									</div>
+								</li>
+								<li class="reviews-slider__item">
+									<div class="reviews-slider__item-photo">
+										<img src="./images/reviews.jpg" class="reviews-slider__item-img">
+									</div>
+									<div class="reviews-slider__content">
+										<div class="reviews-slider__post">глава представительства</div>
+										<h3 class="h3 reviews-slider__name">
+											Валерий Мяснянкин
+										</h3>
+										<div class="reviews-slider__text">
+											Представительство корпорации «VMSN GROUP, INC.» (США) в Республике Беларусь на протяжении
+											нескольких лет сотрудничает с ООО «МК-Правовые технологии» в рамках сопровождения деятельности по
+											юридическим вопросам, в том числе по вопросам ведения кадрового делопроизводства – абонентское
+											обслуживание. Хотелось бы отметить работу специалистов ООО «МК-Правовые технологии» хорошими
+											теплыми словами: надёжные, обязательные, пунктуальные. Вопросы любой сложности им по плечу.
+											Работая с профессионалами МК-Правовые технологии, всегда можно рассчитывать...
+										</div>
+										<a href="#" class="reviews-slider__btn btn btn_transparent">Читать далее</a>
+									</div>
+								</li>
+							</ul>
+						</div>
 						<div class="reviews-slider__controls">
 							<a href="#" class="btn">Все отзывы</a>
-							<div class="reviews-slider__controls-circle">
+							<div id="reviews-slider__controls-circle" class="reviews-slider__controls-circle">
 								<div class="reviews-slider__circle active"></div>
 								<div class="reviews-slider__circle"></div>
 								<div class="reviews-slider__circle"></div>
 							</div>
 							<div class="reviews-slider__arrows">
-								<button class="reviews-slider__arrow slider__control">
+								<button id="reviews-slider__arrow-left" class="reviews-slider__arrow slider__control">
 									<svg class="slider__control-left-img slider__control-img">
 										<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
 									</svg>
 								</button>
-								<button class="reviews-slider__arrow slider__control">
+								<button id="reviews-slider__arrow-right" class="reviews-slider__arrow slider__control">
 									<svg class="slider__control-right-img slider__control-img">
 										<use xlink:href="./images/icons/sprite.svg#sliderArrow" />
 									</svg>
@@ -400,7 +587,9 @@
 				<div class="container">
 					<div class="partners__info">
 						<div class="partners__text">
-							Оказываем юридические услуги юридическим лицам и индивидуальным предпринимателям. Специализируемся в области хозяйственного права, работаем на всей территории Республики Беларусь, а также за ее пределами, с бизнесом любого масштаба.
+							Оказываем юридические услуги юридическим лицам и индивидуальным предпринимателям. Специализируемся в
+							области хозяйственного права, работаем на всей территории Республики Беларусь, а также за ее пределами, с
+							бизнесом любого масштаба.
 						</div>
 						<a href="#" class="btn btn__border">Наши партнеры</a>
 					</div>
@@ -422,20 +611,28 @@
 						<div class="advantages__card white-bg">
 							<h4 class="h4 advantages__title">Просто объясним сложные вещи</h4>
 							<div class="advantages__text">
-								В своей практике, мы дотошно соблюдаем законность, учитываем сложившуюся правовую практику и правила юридической этики. Мы считаем, что в поддержке бизнеса важно учитывать конкретные проблемы клиента и строить сотрудничество по принципу тщательного изучения всех нюансов возникшей ситуации. Всегда честны и объективны.
+								В своей практике, мы дотошно соблюдаем законность, учитываем сложившуюся правовую практику и правила
+								юридической этики. Мы считаем, что в поддержке бизнеса важно учитывать конкретные проблемы клиента и
+								строить сотрудничество по принципу тщательного изучения всех нюансов возникшей ситуации. Всегда честны и
+								объективны.
 							</div>
 						</div>
 						<div class="advantages__card white-bg coner">
 							<h4 class="h4 advantages__title">Надежно защитим права и интересы</h4>
 							<div class="advantages__text">
-								Заказав комплексные юридические услуги в ООО «МК-Правовые технологии», можно больше не платить зарплату штатному юристу, страховые отчисления и налоги с его доходов. Можно не оплачивать отпуск, больничные и не беспокоиться о нахождении работника на рабочем месте в нужный момент.
+								Заказав комплексные юридические услуги в ООО «МК-Правовые технологии», можно больше не платить зарплату
+								штатному юристу, страховые отчисления и налоги с его доходов. Можно не оплачивать отпуск, больничные и
+								не беспокоиться о нахождении работника на рабочем месте в нужный момент.
 							</div>
 						</div>
 						<div class="advantages__card advantages__card_row white-bg">
-							<h4 class="h4 advantages__title">Вы платите только 
+							<h4 class="h4 advantages__title">Вы платите только
 								за результат!</h4>
 							<div class="advantages__text">
-								В своей практике, мы дотошно соблюдаем законность, учитываем сложившуюся правовую практику и правила юридической этики. Мы считаем, что в поддержке бизнеса важно учитывать конкретные проблемы клиента и строить сотрудничество по принципу тщательного изучения всех нюансов возникшей ситуации. Всегда честны и объективны.
+								В своей практике, мы дотошно соблюдаем законность, учитываем сложившуюся правовую практику и правила
+								юридической этики. Мы считаем, что в поддержке бизнеса важно учитывать конкретные проблемы клиента и
+								строить сотрудничество по принципу тщательного изучения всех нюансов возникшей ситуации. Всегда честны и
+								объективны.
 							</div>
 						</div>
 					</div>
@@ -447,7 +644,7 @@
 			</div>
 
 			<!-- services-list -->
-			
+
 			<section class="section section__services-list">
 				<div class="container">
 					<h2 class="h2 section__title">Перечень оказываемых услуг</h2>
@@ -488,7 +685,7 @@
 							<div class="service white-bg service_width_670">
 								<div class="service__rect service__rect_opacity_full"></div>
 								<div class="service__content">
-									<h5 class="h5">Разработка уставных документов и внесение 
+									<h5 class="h5">Разработка уставных документов и внесение
 										изменений в них</h5>
 									<a href="#" class="btn btn_transparent service__btn">подробнее</a>
 								</div>
@@ -533,11 +730,15 @@
 								</div>
 							</div>
 						</li>
-					
+
 					</ul>
 					<div class="services-list__info">
 						<div class="services-list__text">
-							Оказание юридических услуг юридическим лицам и индивидуальным предпринимателям – наша работа. Среди собственников бизнеса принято считать, что прочитать закон в Интернете и применить его на практике - это одно и тоже. Основываясь на этом убеждении, они часто отказываются от профессиональной помощи. Практика же показывает, что только опытный юрист может правильно разобраться в правовых тонкостях, своевременно предотвратить ложные шаги и ускорить получение результата.
+							Оказание юридических услуг юридическим лицам и индивидуальным предпринимателям – наша работа. Среди
+							собственников бизнеса принято считать, что прочитать закон в Интернете и применить его на практике - это
+							одно и тоже. Основываясь на этом убеждении, они часто отказываются от профессиональной помощи. Практика же
+							показывает, что только опытный юрист может правильно разобраться в правовых тонкостях, своевременно
+							предотвратить ложные шаги и ускорить получение результата.
 						</div>
 						<a href="#" class="btn">все услуги</a>
 					</div>
@@ -553,7 +754,9 @@
 							<div class="guarantees__info">
 								<h2 class="h2 guarantees__title">Почему нам доверяют</h2>
 								<div class="guarantees__text">
-									Прозрачность и открытость для клиентов – наш принцип, который с самого начала исключает любые недопонимания. Мы тщательно продумали работу каждого юриста внутри коллектива, что обеспечивает высокое качество юридических услуг компании.
+									Прозрачность и открытость для клиентов – наш принцип, который с самого начала исключает любые
+									недопонимания. Мы тщательно продумали работу каждого юриста внутри коллектива, что обеспечивает
+									высокое качество юридических услуг компании.
 								</div>
 							</div>
 							<ul class="guarantees__points points__list">
@@ -579,7 +782,9 @@
 							<div class="guarantees__info">
 								<h2 class="h2 guarantees__title">Что получает клиент</h2>
 								<div class="guarantees__text">
-									Юристы нашей компании готовы дать четкие, основанные на фактах, консультации, касающиеся и «типовой», и нестандартной ситуации, опираясь на сложившуюся служебную практику и многолетний опыт. Мы объективно оцениваем риски и тщательно анализируем каждый случай.
+									Юристы нашей компании готовы дать четкие, основанные на фактах, консультации, касающиеся и «типовой»,
+									и нестандартной ситуации, опираясь на сложившуюся служебную практику и многолетний опыт. Мы объективно
+									оцениваем риски и тщательно анализируем каждый случай.
 								</div>
 							</div>
 							<ul class="guarantees__points points__list">
@@ -654,13 +859,15 @@
 						</li>
 					</ul>
 					<div class="our-advantages__info white-bg coner">
-						<div class="our-advantages__text">Юристы нашей компании готовы дать четкие, основанные на фактах, консультации, касающиеся и «типовой», и нестандартной ситуации, опираясь на сложившуюся служебную практику и многолетний опыт. Мы объективно оцениваем риски и тщательно анализируем каждый случай.</div>
+						<div class="our-advantages__text">Юристы нашей компании готовы дать четкие, основанные на фактах,
+							консультации, касающиеся и «типовой», и нестандартной ситуации, опираясь на сложившуюся служебную практику
+							и многолетний опыт. Мы объективно оцениваем риски и тщательно анализируем каждый случай.</div>
 					</div>
 				</div>
 			</section>
 
 			<!-- cooperation -->
-			
+
 			<section class="section section__cooperation">
 				<div class="container">
 					<div class="cooperation__wrapper">
@@ -669,15 +876,18 @@
 							<ul class="points__list cooperation__list">
 								<li class="points__item">
 									<div class="point__circle cooperation__circle">1</div>
-									<div class="point__text cooperation__text">Установив контакт с нашим сотрудником, Вы оговорите нюансы предмета обсуждения и согласуете личную встречу.</div>
+									<div class="point__text cooperation__text">Установив контакт с нашим сотрудником, Вы оговорите нюансы
+										предмета обсуждения и согласуете личную встречу.</div>
 								</li>
 								<li class="points__item">
 									<div class="point__circle cooperation__circle">2</div>
-									<div class="point__text cooperation__text">Юрист изучит документы, необходимые для разработки стратегии решения возникшей ситуации. И заключит договор.</div>
+									<div class="point__text cooperation__text">Юрист изучит документы, необходимые для разработки
+										стратегии решения возникшей ситуации. И заключит договор.</div>
 								</li>
 							</ul>
 							<div class="cooperation__info">
-								Также в нашей компании возможна удаленная форма обслуживания с оказанием полного комплекса юридических услуг в РБ через современные средства связи и мессенджеры.
+								Также в нашей компании возможна удаленная форма обслуживания с оказанием полного комплекса юридических
+								услуг в РБ через современные средства связи и мессенджеры.
 							</div>
 						</div>
 						<form action="" class="cooperation-form white-bg">
@@ -690,7 +900,8 @@
 								<input type="text" class="cooperation-form__input" placeholder="+375 (XX) XXX-XX-XX">
 							</label>
 							<div class="cooperation-form__privacy">
-								Нажимая на кнопку «Получить консультацию», вы соглашаетесь с условиями <a href="#" class="cooperation-form__politics">Политики конфиденциальности</a>
+								Нажимая на кнопку «Получить консультацию», вы соглашаетесь с условиями <a href="#"
+									class="cooperation-form__politics">Политики конфиденциальности</a>
 							</div>
 							<a href="#" class="btn cooperation-form__btn">Получить консультацию</a>
 						</form>
@@ -705,7 +916,9 @@
 					<h2 class="h2 section__title cost__title">Стоимость юридических услуг в Минске
 					</h2>
 					<div class="cost__text">
-						Стоимость услуг формируется согласно тарифам, установленным в компании и в зависимости от времени, затраченного юристом на разрешение возникшей ситуации. Принцип прозрачности делает наши цены обоснованными и понятными для клиента.
+						Стоимость услуг формируется согласно тарифам, установленным в компании и в зависимости от времени,
+						затраченного юристом на разрешение возникшей ситуации. Принцип прозрачности делает наши цены обоснованными и
+						понятными для клиента.
 					</div>
 					<a href="#" class="btn">тарифы</a>
 				</div>
@@ -717,7 +930,7 @@
 				<div class="container">
 					<div class="footer__wrapper">
 						<div class="footer-main__wrap">
-							<h5 class="h5 footer__title">ООО “МК-ПРАВОВЫЕ 
+							<h5 class="h5 footer__title">ООО “МК-ПРАВОВЫЕ
 								ТЕХНОЛОГИИ”</h5>
 							<div class="footer-main__data">
 								<div class="footer-main__row">
@@ -879,4 +1092,5 @@
 
 	<script src="main.min.js"></script>
 </body>
+
 </html>

@@ -28,6 +28,7 @@
 	}
 
 	@include tablets {
+		margin-right: rem(10px);
 		margin-bottom: rem(20px);
 	}
 }
