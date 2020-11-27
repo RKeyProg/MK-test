@@ -1,6 +1,6 @@
 .header__top {
 	position: relative;
-	padding: rem(15px) 0;
+	padding: rem(20px) 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -68,7 +68,10 @@
 .header__contacts-phone {
 	display: flex;
 	align-items: center;
-	margin-bottom: rem(20px);
+
+	@include tablets {
+		margin-bottom: rem(20px);
+	}
 }
 
 .header__phone {

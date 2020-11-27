@@ -33,7 +33,10 @@
 
 .nav__item {
 	margin-right: rem(50px);
-	margin-bottom: rem(10px);
+
+	@include desktop {
+		margin-bottom: rem(10px);
+	}
 
 	&:last-child {
 		margin-right: 0;

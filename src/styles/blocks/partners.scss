@@ -1,7 +1,7 @@
 .partners__info {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	padding-right: rem(200px);
 	margin-bottom: rem(40px);
 	
@@ -48,4 +48,8 @@
 	@include desktop {
 		height: auto;
 	}
+}
+
+.partners__btn {
+	padding: rem(7px) rem(30px);
 }
