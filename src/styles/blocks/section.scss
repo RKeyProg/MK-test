@@ -34,10 +34,15 @@
 
 .sectiona__advantages {
 	padding-top: rem(80px);
+	padding-bottom: rem(15px);
+
+	@include tablets {
+		padding-bottom: rem(10px);
+	}
 }
 
 .section__services-list {
-	padding-top: rem(110px);
+	padding-top: rem(80px);
 }
 
 .section__guarantees {

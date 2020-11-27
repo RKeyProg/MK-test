@@ -4,7 +4,7 @@
 }
 
 .guarantees__item {
-	padding-bottom: rem(59px);
+	padding-bottom: rem(80px);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	display: flex;
 	justify-content: space-between;
@@ -35,6 +35,8 @@
 }
 
 .guarantees__points {
+	width: 47%;
+	
 	@include desktop {
 		max-width: 50%;
 	}
@@ -59,7 +61,7 @@
 	width: rem(440px);
 }
 
-.guarantees__text {
+.guarantees__point-text {
 	font-weight: 600;
 	font-size: rem(17px);
 	line-height: rem(30px);

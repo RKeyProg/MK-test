@@ -9,7 +9,7 @@
 
 	&-wrapper {
 		width: 100%;
-		height: rem(620px);
+		height: rem(650px);
 		overflow: hidden;
 	}
 }
@@ -53,7 +53,7 @@
 }
 
 .hero-slider__btn {
-	margin-bottom: rem(111px);
+	margin-bottom: rem(75px);
 
 	@include tablets {
 		margin-bottom: rem(50px);
