@@ -10,7 +10,7 @@ mainSliderBtnLeft.forEach(e => {
 		if (heroSliderRight >= 100) {
 			heroSliderRight-=100;
 		}
-		heroSlider.style.right = `${heroSliderRight}vw`;
+		heroSlider.style.right = `${heroSliderRight}%`;
 	})
 })
 
@@ -19,6 +19,6 @@ mainSliderBtnRight.forEach(e => {
 		if (heroSliderRight < 400) {
 			heroSliderRight+=100;
 		}
-		heroSlider.style.right = `${heroSliderRight}vw`;
+		heroSlider.style.right = `${heroSliderRight}%`;
 	})
 })
